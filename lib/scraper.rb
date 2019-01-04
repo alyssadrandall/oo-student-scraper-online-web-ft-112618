@@ -31,7 +31,7 @@ class Scraper
         elsif element.include?("linkedin")
           student[:linkedin] = element
         else 
-          # student[:blog] = element
+           student[:blog] = element
         end
       end
         student[:bio] = learn_student.css(".bio-content .description-holder").text.gsub("\n", "").strip
